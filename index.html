@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="dark">
+<head>
+<script>
+  // Controlled strictly by our C++ host injector before local rendering
+  window.DRIPZONE_EDIT_MODE = false;
+</script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BARBER KING STYLE — barber shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Kufi+Arabic:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Noto Kufi Arabic', sans-serif; 
+            background-color: #0A0A0A; 
+        }
+        .serif-font { font-family: 'Marcellus', serif; }
+        .gold-gradient { background: linear-gradient(135deg, #C5A880 0%, #A38458 100%); }
+        .text-gold { color: #C5A880; }
+        .border-gold { border-color: #3A3226; }
+    </style>
+</head>
+<body class="text-stone-300 antialiased selection:bg-[#C5A880] selection:text-black">
+
+    <!-- Premium Minimal Header -->
+    <header class="w-full bg-[#0A0A0A] border-b border-stone-900 sticky top-0 z-50 backdrop-blur-md bg-opacity-95">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="#booking" class="bg-gradient-to-r from-[#C5A880] to-[#A38458] text-black text-[11px] font-bold tracking-widest px-6 py-3 uppercase hover:opacity-90 transition-all rounded-none">
+                حجز مقعد خاص
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-xs tracking-wider text-stone-400 font-medium">
+                <a href="#services" class="hover:text-[#C5A880] transition-colors">قائمة الخدمات</a>
+                <a href="#heritage" class="hover:text-[#C5A880] transition-colors">فلسفتنا</a>
+                <a href="#experience" class="hover:text-[#C5A880] transition-colors">التجربة</a>
+            </nav>
+            <div class="text-right">
+                <span class="serif-font text-2xl font-light tracking-[0.2em] text-white">THE NOIR ROOM</span>
+                <span class="block text-[9px] text-stone-500 tracking-widest uppercase mt-0.5">EST. 2026</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Split Screen Hero Section -->
+    <section class="min-h-[calc(100vh-96px)] grid grid-cols-1 lg:grid-cols-12 border-b border-stone-900">
+        <!-- Image Half (Left visually on desktop, but right/left handles via flex/grid) -->
+        <div class="lg:col-span-5 relative bg-stone-950 h-72 lg:h-auto border-b lg:border-b-0 lg:border-l border-stone-900">
+            <img data-editable="hero_image" src="assets/hero.jpg?v=1782123537327" class="w-full h-full object-cover filter grayscale contrast-125 opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-[#0A0A0A]"></div>
+        </div>
+        
+        <!-- Content Half -->
+        <div class="lg:col-span-7 flex flex-col justify-center px-6 md:px-16 py-16 text-right space-y-8">
+            <span class="text-xs font-semibold uppercase tracking-[0.3em] text-[#C5A880]">// الحلاقة كفن كلاسيكي</span>
+            <h1 data-placeholder="hero_title">
+                أعد اكتشاف كاريزما المظهر الفريد.
+            </h1>
+            <p class="text-sm text-stone-400 font-light leading-relaxed max-w-2xl">
+                في "THE NOIR ROOM"، لا نقدم مجرد قص للشعر. إننا نصمم تجربة متكاملة تجمع بين إرث الحلاقة التقليدية وأحدث تقنيات الهندسة البصرية للملامح، داخل بيئة هادئة ومخصصة للرجل العصرية.
+            </p>
+            <div class="pt-6 flex flex-col sm:flex-row-reverse gap-4 justify-start">
+                <a href="#booking" class="bg-stone-100 text-black text-xs font-bold px-10 py-5 hover:bg-[#C5A880] hover:text-black transition-all text-center">
+                    احجز موعدك الآن
+                </a>
+                <a href="#services" class="border border-stone-800 text-stone-300 text-xs font-medium px-8 py-5 hover:bg-stone-900 transition-all text-center">
+                    اكتشف قائمة الخدمات الفاخرة
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage & Concept Statement -->
+    <section id="heritage" class="max-w-7xl mx-auto px-6 py-28 grid grid-cols-1 lg:grid-cols-3 gap-12 border-b border-stone-900">
+        <div class="lg:col-span-1 space-y-4 text-right">
+            <span class="text-xs text-stone-500 uppercase tracking-widest">01 / PHILOSOPHY</span>
+            <h2 class="serif-font text-2xl md:text-3xl text-white font-light">الدقة في أدق التفاصيل</h2>
+        </div>
+        <div class="lg:col-span-2 text-right">
+            <p class="text-stone-400 font-light text-sm leading-loose">
+                كل خطوة في صالوننا مدروسة بعناية فائقة. من اختيار الشفرات اليابانية عالية النقاء، إلى جودة المناشف القطنية الساخنة والمعقمة، وصولاً إلى الزيوت والمستحضرات الطبيعية التي نختارها خصيصاً لتناسب نوع بشرتك وفروة رأسك. نحن نؤمن أن الفخامة تكمن في الهدوء والدقة.
+            </p>
+        </div>
+    </section>
+
+    <!-- Elegant Minimalist Pricing List -->
+    <section id="services" class="max-w-4xl mx-auto px-6 py-28 space-y-16">
+        <div class="text-center space-y-4">
+            <span class="text-xs text-[#C5A880] tracking-[0.2em] uppercase">// MENU DE LA MAISON</span>
+            <h2 class="serif-font text-3xl md:text-4xl text-white font-light">خدماتنا المنسقة بعناية</h2>
+            <div class="w-12 h-[1px] bg-[#C5A880] mx-auto mt-4"></div>
+        </div>
+
+        <div class="space-y-10">
+            <!-- Service Row 1 -->
+            <div class="group flex flex-col md:flex-row-reverse md:justify-between md:items-center gap-2 pb-6 border-b border-stone-900 hover:border-stone-700 transition-colors">
+                <div class="text-right space-y-1">
+                    <h3 class="text-lg font-medium text-white group-hover:text-[#C5A880] transition-colors">قصة الشعر الملكية (Noir Signature Cut)</h3>
+                    <p class="text-xs text-stone-500 font-light">تتضمن استشارة الملامح، غسيل مهدئ للشعر، قصة مخصصة، وتصفيف احترافي.</p>
+                </div>
+                <div class="flex items-center justify-between md:justify-end gap-6">
+                    <span class="serif-font text-lg font-light text-[#C5A880]">150 DH</span>
+                </div>
+            </div>
+
+            <!-- Service Row 2 -->
+            <div class="group flex flex-col md:flex-row-reverse md:justify-between md:items-center gap-2 pb-6 border-b border-stone-900 hover:border-stone-700 transition-colors">
+                <div class="text-right space-y-1">
+                    <h3 class="text-lg font-medium text-white group-hover:text-[#C5A880] transition-colors">نحت اللحية الكلاسيكي (Traditional Beard Shave)</h3>
+                    <p class="text-xs text-stone-500 font-light">حلاقة وتحديد بالموس باستعمال الفوطة الساخنة، مساج خفيف للوجه، وترطيب بزيوت فاخرة.</p>
+                </div>
+                <div class="flex items-center justify-between md:justify-end gap-6">
+                    <span class="serif-font text-lg font-light text-[#C5A880]">120 DH</span>
+                </div>
+            </div>
+
+            <!-- Service Row 3 -->
+            <div class="group flex flex-col md:flex-row-reverse md:justify-between md:items-center gap-2 pb-6 border-b border-stone-900 hover:border-stone-700 transition-colors">
+                <div class="text-right space-y-1">
+                    <h3 class="text-lg font-medium text-white group-hover:text-[#C5A880] transition-colors">الباقة المتكاملة (The Noir Ritual)</h3>
+                    <p class="text-xs text-stone-500 font-light">الخدمة الفاخرة الشاملة: قصة الشعر، العناية باللحية، مع جلسة تنظيف سريعة ومقشر للوجه.</p>
+                </div>
+                <div class="flex items-center justify-between md:justify-end gap-6">
+                    <span class="serif-font text-lg font-light text-[#C5A880]">250 DH</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Showcase Layout -->
+    <section id="experience" class="w-full bg-[#0E0E0E] border-y border-stone-900 py-24 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-right">
+            <div class="p-6 space-y-4 bg-[#0A0A0A] border border-stone-900">
+                <span class="serif-font text-stone-600 text-xl">I.</span>
+                <h4 class="text-white text-sm font-semibold">خصوصية تامة</h4>
+                <p class="text-xs text-stone-400 font-light leading-relaxed">نستقبل زبائننا بناءً على مواعيد مسبقة محددة لضمان جو هادئ ومريح لكل عميل بدون أي ضجيج.</p>
+            </div>
+            <div class="p-6 space-y-4 bg-[#0A0A0A] border border-stone-900">
+                <span class="serif-font text-stone-600 text-xl">II.</span>
+                <h4 class="text-white text-sm font-semibold">تعقيم مخبري</h4>
+                <p class="text-xs text-stone-400 font-light leading-relaxed">نطبق بروتوكولات صارمة لتعقيم الأدوات والكراسي والمناشف بعد كل استخدام بشكل فوري كلياً.</p>
+            </div>
+            <div class="p-6 space-y-4 bg-[#0A0A0A] border border-stone-900">
+                <span class="serif-font text-stone-600 text-xl">III.</span>
+                <h4 class="text-white text-sm font-semibold">خبراء المظهر</h4>
+                <p class="text-xs text-stone-400 font-light leading-relaxed">فريقنا مدرب بشكل احترافي على تحليل زوايا الوجه لتقديم المظهر الأنسب لهويتك وشخصيتك.</p>
+            </div>
+            <div class="p-6 space-y-4 bg-[#0A0A0A] border border-stone-900">
+                <span class="serif-font text-stone-600 text-xl">IV.</span>
+                <h4 class="text-white text-sm font-semibold">منتجات طبيعية</h4>
+                <p class="text-xs text-stone-400 font-light leading-relaxed">نستخدم فقط كريمات وزيوت من ماركات عالمية موثوقة وخالية تماماً من المواد الكيميائية الضارة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clean Premium Booking Terminal -->
+    <section id="booking" class="max-w-7xl mx-auto px-6 py-28">
+        <div 
+            class="max-w-3xl mx-auto bg-[#0E0E0E] border border-stone-900 p-8 md:p-16 text-right space-y-10"
+            x-data="{
+                name: '',
+                service: '',
+                day: '',
+                time: '',
+                phone: '{PHONE_RAW}',
+                submitOrder() {
+                    if(!this.name || !this.service || !this.day || !this.time) {
+                        alert('المرجو ملء حقول الحجز الأساسية لتأكيد الموعد بنجاح.');
+                        return;
+                    }
+                    let txt = `⚜️ طلب حجز موعد خاص - THE NOIR ROOM:\n\n👤 العميل: ${this.name}\n💼 الخدمة: ${this.service}\n📅 التاريخ: ${this.day}\n🕒 التوقيت: ${this.time}\n\nيرجى تأكيد الحجز وتوفير المكان في الوقت المحدد.`;
+                    window.open(`https://wa.me/${this.phone}?text=${encodeURIComponent(txt)}`, '_blank');
+                }
+            }"
+        >
+            <div class="text-center space-y-3">
+                <span class="text-xs text-[#C5A880] tracking-widest uppercase">RESERVATION TERMINAL</span>
+                <h3 class="serif-font text-2xl md:text-4xl text-white font-light">تأكيد حجز مقعدك الخاص</h3>
+                <p class="text-xs text-stone-500 font-light max-w-md mx-auto">اختر الخدمة والوقت المناسب لك، وسيقوم النظام بتجهيز رسالة مباشرة لإرسالها عبر الواتساب.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                <div class="space-y-2">
+                    <label class="text-[11px] text-stone-500 font-medium tracking-wider block">الإسم الكامل للعميل</label>
+                    <input type="text" x-model="name" placeholder="أمين بنجلون" class="w-full bg-[#0A0A0A] border border-stone-800 px-4 py-4 text-xs text-white focus:outline-none focus:border-[#C5A880] transition-colors text-right rounded-none">
+                </div>
+                
+                <div class="space-y-2">
+                    <label class="text-[11px] text-stone-500 font-medium tracking-wider block">الخدمة المطلوبة</label>
+                    <select x-model="service" class="w-full bg-[#0A0A0A] border border-stone-800 px-4 py-4 text-xs text-stone-400 focus:outline-none focus:border-[#C5A880] transition-colors text-right rounded-none">
+                        <option value="">-- اختر من القائمة --</option>
+                        <option value="Noir Signature Cut">قصة الشعر الملكية (150 DH)</option>
+                        <option value="Traditional Beard Shave">نحت اللحية الكلاسيكي (120 DH)</option>
+                        <option value="The Noir Ritual">الباقة المتكاملة الفاخرة (250 DH)</option>
+                    </select>
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-[11px] text-stone-500 font-medium tracking-wider block">تاريخ الموعد</label>
+                    <input type="date" x-model="day" class="w-full bg-[#0A0A0A] border border-stone-800 px-4 py-4 text-xs text-white focus:outline-none focus:border-[#C5A880] transition-colors text-right rounded-none">
+                </div>
+
+                <div class="space-y-2">
+                    <label class="text-[11px] text-stone-500 font-medium tracking-wider block">ساعة الحضور</label>
+                    <select x-model="time" class="w-full bg-[#0A0A0A] border border-stone-800 px-4 py-4 text-xs text-stone-400 focus:outline-none focus:border-[#C5A880] transition-colors text-right rounded-none">
+                        <option value="">-- اختر الساعة --</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="03:00 PM">03:00 PM</option>
+                        <option value="05:30 PM">05:30 PM</option>
+                        <option value="08:00 PM">08:00 PM</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="pt-6">
+                <button @click="submitOrder()" class="w-full bg-gradient-to-r from-[#C5A880] to-[#A38458] text-black font-semibold py-4 text-xs tracking-widest uppercase hover:opacity-90 transition-all rounded-none">
+                    إرسال طلب الحجز الفوري عبر الواتساب
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location / Map Coordinates -->
+    <section class="w-full h-[400px] relative border-t border-stone-900">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.84643034947!2d-7.6325514!3d33.5833215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDM1JzAwLjAiTiA3wrAzNzk1Ny4yIlc!5e0!3m2!1sfr!2sma!4v1710000000000!5m2!1sfr!2sma" 
+            class="w-full h-full border-0 grayscale opacity-20 filter contrast-125" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+        <div class="absolute bottom-8 left-8 bg-[#0A0A0A] border border-stone-900 p-6 max-w-sm text-right">
+            <h4 class="text-xs font-semibold text-[#C5A880] mb-2 uppercase">الموقع والمقر الرئيسي:</h4>
+            <p class="text-xs text-stone-400 leading-relaxed font-light">{ADDRESS_FULL}</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-12 text-[10px] text-stone-600 tracking-widest bg-black border-t border-stone-900 uppercase">
+        © 2026 THE NOIR ROOM — Kenitra Hub. Architectural Grooming Standards.
+    </footer>
+
+<script>(function(){
+  if (window.DRIPZONE_EDIT_MODE === true) return;
+  if (window.__dzProductionLockReady) return;
+  window.__dzProductionLockReady = true;
+
+  document.documentElement.classList.add('dz-production-mode');
+  document.body.classList.remove('dz-inline-edit-mode');
+
+  document.querySelectorAll('[contenteditable]').forEach(function(el){
+    el.removeAttribute('contenteditable');
+    el.removeAttribute('spellcheck');
+    el.classList.remove('dz-inline-editing');
+  });
+  document.querySelectorAll('[data-dz-inline-bound]').forEach(function(el){
+    el.removeAttribute('data-dz-inline-bound');
+  });
+
+  var css = document.createElement('style');
+  css.id = 'dz-production-lock';
+  css.textContent = [
+    'html.dz-production-mode,html.dz-production-mode body{overflow-x:hidden;scroll-behavior:smooth}',
+    'html.dz-production-mode [data-editable-token],html.dz-production-mode [data-placeholder]{',
+    '  outline:none!important;box-shadow:none!important;cursor:inherit;background:transparent!important}',
+    'html.dz-production-mode .dz-inline-editing{outline:none!important;background:transparent!important}',
+    'html.dz-production-mode [data-editable-token]:empty{display:none}',
+    'html.dz-production-mode a[href]{pointer-events:auto}'
+  ].join('');
+  if (!document.getElementById('dz-production-lock')) {
+    document.head.appendChild(css);
+  }
+})();</script></body>
+</html>
